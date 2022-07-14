@@ -15,15 +15,21 @@
     <string name="err_006">Minimum required space is not available</string>
     <string name="err_007">Registrations are not allowed</string>
     <string name="err_008">Policy Certificate Data not allowed</string>
+    <string name="err_009">Operator Biometrics are missing</string>
+    <string name="err_010">Exception while evaluating the biometrics quality with SDK</string>
 
     <!-- Errors -->
     <string name="global_config_sync_failed">Global config sync failed</string>
     <string name="packet_status_sync_failed">Packet status sync failed : %s</string>
     <string name="packet_status_sync_failed_with_status_code">Packet status sync failed with status code : %s</string>
+    <string name="ida_auth_failed">IDA Authentication Failed</string>
+    <string name="get_certificate_failed">Get Certificate Sync Failed</string>
 
     <!-- Success -->
     <string name="global_config_sync_completed">Global config sync Completed</string>
     <string name="packet_status_sync_completed">Packet status sync completed"</string>
+    <string name="ida_auth_completed">User Onboard Completed</string>
+    <string name="get_certificate_completed">Get Certificate Sync Completed</string>
     <string name="packet_status_sync">%d packet/s status synced"</string>
     <string name="NA">NA</string>
 </resources>

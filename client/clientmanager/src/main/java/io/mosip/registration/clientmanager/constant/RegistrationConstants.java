@@ -36,4 +36,53 @@ public class RegistrationConstants {
 
     //Audits
     public static final String REGISTRATION_SCREEN = "Registration: %s";
+
+    public static final String ON_BOARD_TIME_STAMP = "timestamp";
+    public static final String ON_BOARD_BIO_TYPE = "bioType";
+    public static final String ON_BOARD_BIO_SUB_TYPE = "bioSubType";
+    public static final String ON_BOARD_BIO_VALUE = "bioValue";
+    public static final String ON_BOARD_BIO_DATA = "data";
+    public static final String ON_BOARD_BIOMETRICS = "biometrics";
+    public static final String ON_BOARD_REQUEST = "request";
+    public static final String ON_BOARD_REQUEST_HMAC = "requestHMAC";
+    public static final String ON_BOARD_REQUEST_SESSION_KEY = "requestSessionKey";
+
+    public static final String APP_ID_IDA = "IDA";
+    public static final String IDA_REFERENCE_ID = "INTERNAL";
+    public static final String PUBLIC_KEY_IDA_REST = "ida_key";
+    public static final String ON_BOARD_IDA_VALIDATION = "ida_auth";
+    public static final String ID = "id";
+    public static final String IDENTITY = "mosip.identity.auth.internal";
+    public static final String VERSION = "version";
+    public static final String ENV = "env";
+    public static final String DOMAIN_URI = "domainUri";
+    public static final String TRANSACTION_Id = "transactionId";
+    public static final String PURPOSE = "purpose";
+    public static final String PURPOSE_AUTH = "Auth";
+    public static final String REQUEST_TIME = "requestTime";
+    public static final String TRANSACTION_ID = "transactionID";
+    public static final String TRANSACTION_ID_VALUE = "1234567890";
+    public static final String AUTH_HASH = "hash";
+    public static final String SESSION_KEY = "sessionKey";
+    public static final String SIGNATURE = "signature";
+    public static final String RESPONSE = "response";
+    public static final String JOB_TRIGGER_POINT_SYSTEM = "System";
+    public static final String JOB_TRIGGER_POINT_USER = "User";
+    public static final String CONSENT_OBTAINED = "consentObtained";
+    public static final String INDIVIDUAL_ID = "individualId";
+    public static final String INDIVIDUAL_ID_TYPE = "individualIdType";
+    public static final String KEY_INDEX = "keyIndex";
+    public static final String USER_ID_CODE = "USERID";
+    public static final String BIO = "bio";
+    public static final String REQUEST_AUTH = "requestedAuth";
+    public static final String TIME_STAMP = "timeStamp";
+    public static final String REF_ID = "referenceId";
+    public static final String THUMBPRINT = "thumbprint";
+    public static final String ON_BOARD_AUTH_STATUS = "authStatus";
+
+    public static final String FINGERPRINT_UPPERCASE = "FINGERPRINT";
+    public static final String FACE = "FACE";
+    public static final String IRIS = "IRIS";
+    public static final String SUCCESS = "Success";
+    public static final String ERRORS = "errors";
 }

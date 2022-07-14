@@ -48,4 +48,10 @@ public interface SyncRestService {
 
     @GET("/v1/syncdata/getcacertificates")
     Call<ResponseWrapper<CACertificateResponseDto>> getCACertificates(@Query("lastupdated") String lastupdated);
+
+    @GET("/registrationprocessor/v1/registrationstatus/getCertificate?applicationId=IDA&referenceId={referenceId}")
+    Call<ResponseWrapper<Map<String, Object>>> getIDACertificate(@Path("referenceId") String referenceId, @QueryMap Map<String, String> params);
+
+    @POST("/registrationprocessor/v1/registrationstatus/auth")
+    Call<ResponseWrapper<Map<String, Object>>> onboardAuth(@Body Map<String, Object> requestBody);
 }

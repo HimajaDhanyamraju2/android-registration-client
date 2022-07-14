@@ -17,6 +17,8 @@ import dagger.Provides;
 import io.mosip.registration.clientmanager.BuildConfig;
 import io.mosip.registration.clientmanager.service.JobManagerServiceImpl;
 import io.mosip.registration.clientmanager.service.JobTransactionServiceImpl;
+import io.mosip.registration.clientmanager.service.UserOnboardServiceImpl;
+import io.mosip.registration.clientmanager.spi.UserOnboardService;
 import io.mosip.registration.clientmanager.spi.JobManagerService;
 import io.mosip.registration.clientmanager.util.LocalDateTimeDeserializer;
 import io.mosip.registration.clientmanager.util.LocalDateTimeSerializer;
@@ -262,5 +264,11 @@ public class AppModule {
     @Singleton
     JobManagerService provideJobManagerService(SyncJobDefRepository syncJobDefRepository, JobTransactionService jobTransactionService) {
         return new JobManagerServiceImpl(appContext, syncJobDefRepository, jobTransactionService);
+    }
+
+    @Provides
+    @Singleton
+    UserOnboardService provideUserOnboardService(SyncRestService syncRestService, RegistrationService registrationService, CryptoManagerService cryptoManagerService, UserOnboardRepository userOnboardRepository, UserDetailRepository userDetailRepository) {
+        return new UserOnboardServiceImpl(appContext, syncRestService, registrationService, cryptoManagerService, userOnboardRepository, userDetailRepository);
     }
 }

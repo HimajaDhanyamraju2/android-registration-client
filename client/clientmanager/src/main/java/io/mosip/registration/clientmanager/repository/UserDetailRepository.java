@@ -54,4 +54,8 @@ public class UserDetailRepository {
         }
         userDetailDao.truncateAndInsertAll(userDetailList);
     }
+
+    public void updateUserDetail(String userId, boolean isOnboarded) {
+        userDetailDao.updateUserDetail(userId, isOnboarded);
+    }
 }

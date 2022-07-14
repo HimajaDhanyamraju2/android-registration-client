@@ -23,4 +23,6 @@ public abstract class UserDetailDao {
         insertAllUsers(users);
     }
 
+    @Query("update user_detail set is_onboarded = :status where id = :userId")
+    public abstract void updateUserDetail(String userId, boolean status);
 }

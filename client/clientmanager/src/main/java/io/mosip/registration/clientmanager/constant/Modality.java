@@ -92,4 +92,33 @@ public enum Modality {
         return format;
     }
 
+    public static Modality getModality(String bioAttribute) {
+        switch (bioAttribute.toLowerCase()) {
+            case "rightindex":
+            case "rightlittle":
+            case "rightmiddle":
+            case "rightring":
+                return Modality.FINGERPRINT_SLAB_RIGHT;
+
+            case "leftindex":
+            case "leftlittle":
+            case "leftmiddle":
+            case "leftring":
+                return Modality.FINGERPRINT_SLAB_LEFT;
+
+            case "rightthumb":
+            case "leftthumb":
+                return Modality.FINGERPRINT_SLAB_THUMBS;
+
+            case "righteye":
+            case "lefteye":
+            case "rightiris":
+            case "leftiris":
+                return Modality.IRIS_DOUBLE;
+
+            case "face": return Modality.FACE;
+        }
+        return null;
+    }
+
 }
